@@ -1,5 +1,9 @@
+@import url("footer.css");
 /* font-family: 'Merriweather', serif;
 font-family: 'Montserrat', sans-serif; */
+html {
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
@@ -17,6 +21,14 @@ h6 {
   font-size: 10 rem;
 }
 
+a {
+  text-decoration: none;
+  font-family: "Merriweather", serif;
+  padding: 1rem 0;
+  line-height: 1.7rem;
+  font-size: 1.2rem;
+}
+
 p,
 li {
   font-family: "Merriweather", serif;
@@ -32,14 +44,13 @@ li {
 }
 
 .modal-btns {
-  transition: all 0.3 linear;
   border: none;
   background: transparent;
+  transition: transform 0.3s ease;
 }
 
 .modal-btns:hover {
   transform: rotate(90deg);
-  transition: all 0.3 linear;
 }
 
 .modal-text {
@@ -64,7 +75,9 @@ li {
 
 .main-container,
 .hero {
-  padding: 0 7rem;
+  /* padding: 0 7rem; */
+  padding: 0 23rem 2rem 23rem;
+  margin-bottom: 3.5rem;
 }
 
 /* .para-space {
@@ -75,8 +88,8 @@ li {
 
 .navbar {
   margin: 0 auto;
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #000000;
+  color: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -87,7 +100,80 @@ li {
   background-color: #f5f8fb;
 }
 .hero-img {
+  padding: 3rem 0;
   background-size: contain;
-  max-width: 50%;
+  max-width: 80%;
   height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.card-category {
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+  margin-bottom: 1.8rem;
+}
+
+.card {
+  margin: 5rem 0;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.modal-text,
+.modal-title {
+  padding: 0 7rem;
+}
+
+.title-text {
+  padding: 1rem 2rem;
+}
+
+div.hero h1 {
+  font-size: 3rem;
+}
+
+.font-lg {
+  font-size: 2rem;
+  margin-top: 1.5rem;
+}
+
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.top-link {
+  font-size: 1.25rem;
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  background: grey;
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  visibility: hidden;
+  z-index: -100;
+}
+
+.show-link {
+  visibility: visible;
+  z-index: 100;
 }
