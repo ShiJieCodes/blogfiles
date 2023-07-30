@@ -34,7 +34,9 @@ window.addEventListener("scroll", function () {
     topLink.classList.remove("show-link");
   }
 });
+// fixed navbar start
 
+// scroll to link
 const scrollLinks = document.querySelectorAll(".scroll-link");
 
 scrollLinks.forEach(function (link) {
@@ -60,3 +62,15 @@ scrollLinks.forEach(function (link) {
     });
   });
 });
+// scroll to link
+
+// whatsapp share
+const shareBtn = document.getElementById("btnshare");
+
+shareBtn.addEventListener("click", function () {
+  const currentPage = encodeURIComponent(window.location.href);
+  let whatsappLink = "https://wa.me/?text=" + currentPage;
+  window.open(whatsappLink, "_blank");
+});
+
+// whatsapp share

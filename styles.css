@@ -18,7 +18,6 @@ h5,
 h6 {
   font-family: "Montserrat", sans-serif;
   padding: 1rem 0;
-  font-size: 10 rem;
 }
 
 a {
@@ -47,6 +46,11 @@ li {
   border: none;
   background: transparent;
   transition: transform 0.3s ease;
+}
+
+span {
+  opacity: 0.3;
+  font-size: 1rem;
 }
 
 .modal-btns:hover {
@@ -93,7 +97,7 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 2rem;
 }
 
 .hero-bg {
@@ -116,7 +120,6 @@ li {
   justify-content: center;
   align-items: center;
   color: white;
-  font-size: 24px;
   font-weight: bold;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
@@ -127,6 +130,7 @@ li {
 }
 
 .card {
+  padding-bottom: 3rem;
   margin: 5rem 0;
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
@@ -138,7 +142,8 @@ li {
 }
 
 .title-text {
-  padding: 1rem 2rem;
+  /* padding: 1rem 2rem; */
+  padding: 1rem 2rem 3rem 2rem;
 }
 
 div.hero h1 {
@@ -176,4 +181,74 @@ div.hero h1 {
 .show-link {
   visibility: visible;
   z-index: 100;
+}
+
+.share-btn {
+  padding-top: 0;
+  text-align: end;
+  padding-right: 10rem;
+}
+
+.share-btn:hover {
+  color: greenyellow;
+}
+
+.main-container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.headtext {
+  color: #ffffff;
+  opacity: 1;
+}
+
+/* Responsive styles for main-container class */
+@media (min-width: 576px) {
+  .main-container {
+    align-content: center;
+    max-width: 540px;
+    text-align: left;
+    word-wrap: break-all;
+  }
+
+  .card-category {
+    font-size: 2rem;
+  }
+
+  .headtext {
+    font-size: 8rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-container {
+    align-content: center;
+    max-width: 720px;
+    text-align: left;
+    word-wrap: break-all;
+  }
+
+  .card-category {
+    font-size: 2rem;
+  }
+
+  .headtext {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .main-container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-container {
+    max-width: 1140px;
+  }
 }
